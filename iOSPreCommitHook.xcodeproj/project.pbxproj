@@ -55,6 +55,7 @@
 				3B20CDD22E71B29D00DC7798 /* Sources */,
 				3B20CDD32E71B29D00DC7798 /* Frameworks */,
 				3B20CDD42E71B29D00DC7798 /* Resources */,
+				3B20CDE52E71B5FD00DC7798 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -113,6 +114,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B20CDE52E71B5FD00DC7798 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -f \"${SRCROOT}/scripts/pre-commit\" ]; then\n  cp \"${SRCROOT}/scripts/pre-commit\" \"${SRCROOT}/.git/hooks/pre-commit\"\n  chmod +x \"${SRCROOT}/.git/hooks/pre-commit\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B20CDD22E71B29D00DC7798 /* Sources */ = {
