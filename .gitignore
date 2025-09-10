@@ -1,0 +1,70 @@
+# Xcode
+build/
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.xcscmblueprint
+
+# Swift Package Manager
+.build/
+Packages/
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# Archives
+*.xcarchive
+
+# App files
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Playground
+timeline.xctimeline
+playground.xcworkspace
+
+# Xcode Workspace
+xcshareddata/
+
+# User-specific files
+*.swp
+*.swo
+*.orig
+
+# IDE
+.idea/
+
+# Misc
+*.moved-aside
+*.xcuserstate
+
+# Asset catalog generated files
+*.xcassets
+
+# Temporary files
+*.tmp
+*.temp
+
+# macOS
+.DS_Store
+
+# Other
+*.log
+
+# Uncomment if you use Tuist
+# .tuist/
