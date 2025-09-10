@@ -131,7 +131,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ ! -x \"${SRCROOT}/.git/hooks/pre-commit\" ]; then\n  echo \"error: .git/hooks/pre-commit hook is missing or not executable. Please run 'sh setup-hooks.sh' to install it.\"\n  exit 1\nfi\n";
+			shellScript = "if [ ! -x \"${SRCROOT}/.git/hooks/pre-commit\" ]; then\n  echo \"error: .git/hooks/pre-commit hook is missing or not executable. Please run 'sh ./scripts/setup-hooks.sh' to install it.\"\n  exit 1\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
