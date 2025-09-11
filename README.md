@@ -24,9 +24,10 @@ From the project root, run:
 ```sh
 sh ./scripts/setup-hooks.sh
 ```
+
 This will:
-- Copy the pre-commit script to `.git/hooks/pre-commit`
-- Make it executable
+- Create a symlink from `.git/hooks/pre-commit` to `scripts/pre-commit` (so updates to the script are automatically reflected)
+- Ensure the target script is executable (`chmod +x scripts/pre-commit`)
 - Display the current threshold setting
 
 ## 🧩 Xcode Integration: Ensuring the Hook is Installed

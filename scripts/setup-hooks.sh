@@ -9,6 +9,7 @@ if [ ! -f "$HOOK_SRC" ]; then
   exit 1
 fi
 
-cp "$HOOK_SRC" "$HOOK_DEST"
-chmod +x "$HOOK_DEST"
-echo "pre-commit hook installed to $HOOK_DEST"
+# Create a symlink instead of copying, so updates are automatic
+ln -sf "$HOOK_SRC" "$HOOK_DEST"
+chmod +x "$HOOK_SRC"
+echo "pre-commit hook symlinked to $HOOK_DEST"
